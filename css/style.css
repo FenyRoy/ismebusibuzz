@@ -1,10 +1,3 @@
-/*
-  Theme Name: TheEvent
-  Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -702,13 +695,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 30px 0;
 }
 
-#events .speaker {
+#events .Event {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  max-height: 140px;
 }
 
-#events .speaker .details {
+#events .Event .img{
+  text-align: center;
+}
+
+#events .Event .details {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
   left: 0;
@@ -719,33 +717,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#events .speaker .details h3 {
+#events .Event .details h3 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#events .speaker .details p {
+#events .Event .details p {
   color: #fff;
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
 }
 
-#events .speaker .details .social {
+#events .Event .details .social {
   height: 30px;
 }
 
-#events .speaker .details a {
+#events .Event .details a {
   color: #fff;
 }
 
-#events .speaker .details a:hover {
+#events .Event .details a:hover {
   color: #f82249;
 }
 
-#events .speaker:hover .details {
+#events .Event:hover .details {
   bottom: 0;
 }
 
@@ -853,7 +851,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: inline-block;
 }
 
-#schedule .schedule-item .speaker {
+#schedule .schedule-item .Event {
   width: 60px;
   height: 60px;
   overflow: hidden;
@@ -862,7 +860,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 10px 10px 0;
 }
 
-#schedule .schedule-item .speaker img {
+#schedule .schedule-item .Event img {
   height: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -908,7 +906,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #venue .venue-info {
-  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background: url("../img/clg.jpg") top left no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 60px;
@@ -917,7 +915,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue .venue-info:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(13, 20, 41, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1283,6 +1281,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #e0072f;
 }
 
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1536,6 +1535,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
+
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
