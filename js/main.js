@@ -13,6 +13,11 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
+  'use strict';
+$(window).load(function() {
+    $('.loader').delay(500).fadeOut('slow');
+});
+
   // Header fixed on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
