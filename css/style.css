@@ -1681,6 +1681,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
+
+  #contact .contact-email {
+    border-left: 1px solid #ddd;
+  }
 }
 
 @media (min-width: 991px) {
