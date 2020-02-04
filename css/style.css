@@ -1010,6 +1010,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+
+
+.brand_item {
+  opacity: 0.4;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  
+}
+.brand_item img {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.brand_item:hover {
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
 /*--------------------------------------------------------------
 # Venue Section
 --------------------------------------------------------------*/
